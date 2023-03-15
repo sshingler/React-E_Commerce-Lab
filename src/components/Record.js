@@ -1,4 +1,25 @@
 import React, { useState } from 'react';
+import styled from 'styled-components';
+
+
+const RecordInfo = styled.p`
+    text-align: center;
+    display:flex;
+    justify-content:space-evenly;
+`
+
+const RecordContainer = styled.div`
+    border-style: solid;
+    display: flex; 
+    justify-content:space-evenly;
+    align-items: center;
+    margin: 10px; 
+    margin-left: 180px; 
+    margin-right: 180px; 
+
+`
+
+
 
 const Record = ({ records, baskets, setBaskets  }) => {
     
@@ -13,19 +34,22 @@ const Record = ({ records, baskets, setBaskets  }) => {
             setBaskets([...baskets, records]);
         }
     }
+
     return ( 
-        <>
-        <p>Records</p>
-        <p>Artist: {records.artistName}</p>
-        <p>Album: {records.albumName}</p>
-        <p>Price: £{records.albumCost}</p>
-        {!isBasket ? 
-        <button onClick={handleClick}>Add to basket</button>
-        :
-        <button onClick={handleClick}>Remove from basket</button>
-    }
-        </>
-     );
+    <>
+        <RecordContainer>
+            <RecordInfo>Artist: {records.artistName}</RecordInfo>
+            <RecordInfo>Album: {records.albumName}</RecordInfo>
+            <RecordInfo>Price: £{records.albumCost}</RecordInfo>
+            <RecordInfo>{!isBasket ? 
+            <button onClick={handleClick}>Add to basket</button>
+            :
+            <button onClick={handleClick}>Remove from basket</button>
+            }</RecordInfo>
+        </RecordContainer>
+    
+    </>
+    );
 }
  
 export default Record;

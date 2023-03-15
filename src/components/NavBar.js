@@ -1,11 +1,21 @@
 import React from "react";
 import {Link} from "react-router-dom";
+import styled from 'styled-components'; 
+
+const List = styled.ul`
+    text-align: center;
+    display:flex;
+    justify-content:space-evenly;
+    list-style-type: none;
+    background: ;
+`
+
 
 const NavBar = () => {
 
     return (
         <nav>
-            <ul>
+            <List>
                 <li>
                     <Link to="/">Home</Link>
                 </li>
@@ -15,7 +25,7 @@ const NavBar = () => {
                 <li>
                     <Link to="/basket">Basket</Link>
                 </li>
-            </ul>
+            </List>
         </nav>
 
 
