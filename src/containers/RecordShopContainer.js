@@ -17,7 +17,7 @@ const RecordShopContainer = ({baskets, setBaskets}) => {
 
     return ( 
         <>
-        <h2>Record Shop</h2>
+        
     
         <RecordList records={records} baskets={baskets} setBaskets={setBaskets} />
         </>

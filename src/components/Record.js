@@ -16,8 +16,9 @@ const RecordContainer = styled.div`
     margin: 10px; 
     margin-left: 180px; 
     margin-right: 180px; 
-
 `
+
+
 
 
 
@@ -36,7 +37,7 @@ const Record = ({ records, baskets, setBaskets  }) => {
     }
 
     return ( 
-    <>
+    <>  
         <RecordContainer>
             <RecordInfo>Artist: {records.artistName}</RecordInfo>
             <RecordInfo>Album: {records.albumName}</RecordInfo>
