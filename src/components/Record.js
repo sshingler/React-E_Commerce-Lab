@@ -16,6 +16,7 @@ const RecordContainer = styled.div`
     margin: 10px; 
     margin-left: 180px; 
     margin-right: 180px; 
+    background-color: #DED6D6;
 `
 
 

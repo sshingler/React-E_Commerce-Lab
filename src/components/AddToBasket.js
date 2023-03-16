@@ -15,6 +15,7 @@ const BasketRecordContainer = styled.div`
     margin: 10px; 
     margin-left: 180px; 
     margin-right: 180px; 
+    background-color: #DED6D6
 `
 const BasketHeader = styled.h3`
     text-align: center;
